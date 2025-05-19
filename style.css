@@ -1,0 +1,160 @@
+/* Reset default margin & padding */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Warna tema utama */
+:root {
+  --primary-color: #fff0f5;
+  --secondary-color: #FF9B45;
+  --text-color: #ffff;
+  --bg-color: #D5451B;
+}
+
+/* Custom Background */
+.bg-custom {
+  background-color: var(--secondary-color);
+}
+
+/* Custom Text */
+.text-custom {
+  color: var(--primary-color);
+}
+
+/* Navbar Styling */
+.custom-navbar {
+  background-color: var(--bg-color);
+  border-bottom: 2px solid var(--primary-color);
+}
+
+.custom-navbar .nav-link {
+  color: var(--text-color);
+  font-weight: 500;
+  margin: 0 10px;
+  transition: 0.3s;
+}
+
+.custom-navbar .nav-link:hover,
+.custom-navbar .nav-link.active {
+  color: var(--primary-color);
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+/* Button Custom */
+.btn-custom {
+  background-color: var(--secondary-color);
+  color: var(--text-color);
+  font-weight: bold;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  transition: background-color 0.3s ease;
+  cursor: pointer;
+}
+
+.btn-custom:hover {
+  background-color: var(--bg-color);
+}
+
+/* Jumbotron Text */
+.jumbotron-text {
+  padding: 60px 20px;
+  background-color: var(--secondary-color);
+}
+
+/* Card Section */
+.card {
+  border: 2px solid var(--primary-color);
+  border-radius: 12px;
+  background-color: white;
+}
+
+/* Carousel caption styling */
+.carousel-caption {
+  color: white;
+  font-weight: bold;
+  text-shadow: 1px 1px 2px black;
+}
+
+/* Responsive image in carousel */
+.carousel-item img {
+  object-fit: cover;
+  max-height: 400px;
+}
+
+/* Responsive tweaks */
+@media (max-width: 768px) {
+  .jumbotron-text h1 {
+      font-size: 28px;
+  }
+
+  .carousel-caption {
+      font-size: 14px;
+  }
+
+  .nav-pills .nav-link {
+      padding: 8px 12px;
+  }
+}
+
+/* Game area */
+#game-area {
+  position: relative;
+  width: 400px;
+  height: 400px;
+  margin: 20px auto;
+  background: #555;
+  border: 2px solid white;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 48px;
+  font-weight: bold;
+  color: white;
+}
+
+/* Box styles */
+.box {
+  position: absolute;
+  background-color: red;
+  cursor: pointer;
+  transition: all 0.2s;
+  user-select: none;
+}
+
+.box.normal {
+  width: 50px;
+  height: 50px;
+}
+
+.box.small {
+  width: 35px;
+  height: 35px;
+}
+
+/* Start button styling */
+#start-btn {
+  margin-top: 20px;
+  padding: 8px 16px; /* kecilkan padding supaya tombol tidak panjang */
+  font-size: 18px; /* sesuaikan font */
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 8px;
+  background-color: #ff5555;
+  color: white;
+  border: none;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: fit-content;
+  min-width: 0;
+  white-space: nowrap;
+}
+
+#start-btn:hover {
+  background-color: #ff2222;
+}
